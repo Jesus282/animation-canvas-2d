@@ -2,7 +2,11 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba") no-repeat center center/cover;
+
+    background: 
+        
+        url("/assets/images/imagen.jpg") no-repeat center center/cover;
+
     font-family: Arial, sans-serif;
     color: white;
 }
