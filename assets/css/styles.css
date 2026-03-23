@@ -1,0 +1,21 @@
+/* Fondo con imagen */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Canvas */
+canvas {
+    border-radius: 15px;
+}
