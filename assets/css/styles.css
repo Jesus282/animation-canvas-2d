@@ -1,25 +1,132 @@
-/* Fondo con imagen */
+/* =========================
+   🌸 ESTILOS GENERALES
+========================= */
 body {
     margin: 0;
     min-height: 100vh;
 
     background: 
-        
+        linear-gradient(rgba(255, 240, 245, 0.4), rgba(255, 240, 245, 0.4)),
         url("/assets/images/imagen.jpg") no-repeat center center/cover;
 
     font-family: Arial, sans-serif;
-    color: white;
+    color: #5a4a4a;
 }
 
-/* Glassmorphism */
+/* =========================
+   🧊 GLASSMORPHISM GLOBAL
+========================= */
 .glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Canvas */
+/* =========================
+   🎛️ PANEL DE CONTROL
+========================= */
+.control-panel {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    /* 🔥 NUEVO: panel lateral fijo */
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+/* =========================
+   📦 CONTENEDOR CANVAS
+========================= */
+.canvas-container {
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   🖼️ CANVAS
+========================= */
 canvas {
-    border-radius: 15px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 182, 193, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.25);
+
+    /* 🔥 NUEVO: responsive */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* =========================
+   ✏️ INPUTS
+========================= */
+.input-glass {
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+    color: #5a4a4a;
+}
+
+.input-glass:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 182, 193, 0.5);
+}
+
+/* =========================
+   🎀 BOTÓN
+========================= */
+.btn-pink {
+    background: linear-gradient(135deg, #ffc1d6, #ff9ecb);
+    border: none;
+    color: #5a4a4a;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+}
+
+/* =========================
+   🧭 NAVBAR
+========================= */
+.navbar {
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 0.95rem;
+    color: #5a4a4a;
+}
+
+/* =========================
+   🔻 FOOTER
+========================= */
+footer {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 0.9rem;
+    color: #5a4a4a;
+}
+
+/* =========================
+   📝 TEXTOS
+========================= */
+h5, label {
+    color: #ff6f91;
+    font-weight: 600;
+}
+
+/* =========================
+   📏 AJUSTES GENERALES
+========================= */
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
 }
